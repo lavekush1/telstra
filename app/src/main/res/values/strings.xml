@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Telstra</string>
     <string name="url_company">www.telstra.com.au</string>
+    <string name="error_offline_text">You are currently offline. Please connect to internet and try again.</string>
 </resources>

@@ -13,7 +13,7 @@ public class Util {
 
     private static final String TAG = Util.class.getSimpleName();
 
-    private boolean isConnectedWithInternet(Context context) {
+    public static boolean isConnectedWithInternet(Context context) {
         try {
 
             ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
