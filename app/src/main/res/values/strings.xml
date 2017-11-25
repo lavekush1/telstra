@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">telstra</string>
+    <string name="app_name">Telstra</string>
+    <string name="url_company">www.telstra.com.au</string>
 </resources>

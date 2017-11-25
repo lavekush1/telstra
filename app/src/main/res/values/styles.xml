@@ -1,11 +1,26 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Material.Base"></style>
+
+    <style name="Material.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--   The color applied to framework controls in their normal state. -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+
+        <!--   The color applied to framework controls in their activated (ex. checked, switch on) state. -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+
+        <!--   Remove window bar title -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <!--   App branding color for the app bar -->
         <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!--   darker variant for the status bar and contextual app bars -->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!--   theme UI controls like checkboxes and text fields -->
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
 </resources>
