@@ -1,9 +1,11 @@
-package com.lavekush.telstra;
+package com.lavekush.telstra.activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.lavekush.telstra.R;
 
 public class SplashScreenMainActivity extends AppCompatActivity {
 
