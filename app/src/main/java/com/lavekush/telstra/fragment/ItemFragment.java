@@ -117,6 +117,7 @@ public class ItemFragment extends Fragment {
                 }
             });
         } else {
+            mViewFlipper.setDisplayedChild(CONTAINER_ERROR);
             mTextError.setError(getString(R.string.error_offline_text));
         }
 
