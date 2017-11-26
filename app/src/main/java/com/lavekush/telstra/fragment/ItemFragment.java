@@ -16,7 +16,6 @@ import android.widget.ViewFlipper;
 
 import com.google.gson.Gson;
 import com.lavekush.telstra.R;
-import com.lavekush.telstra.activity.HomeActivity;
 import com.lavekush.telstra.networking.NetworkApiInterface;
 import com.lavekush.telstra.networking.RetrofitClient;
 import com.lavekush.telstra.util.Util;
@@ -42,10 +41,18 @@ public class ItemFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private TextView mTextError;
 
-
+    /**
+     * Empty public constructor require if we are going to give factory method (But its optional)
+     */
     public ItemFragment() {
     }
 
+
+    /**
+     * Factory for activity class in order easily apply basic validation
+     * @param args
+     * @return
+     */
     public static ItemFragment newInstance(Bundle args) {
         ItemFragment fragment = new ItemFragment();
         fragment.setArguments(args);
@@ -72,7 +79,7 @@ public class ItemFragment extends Fragment {
         //showing loader
         mViewFlipper.setDisplayedChild(CONTAINER_LOADER);
 
-        //adding listener
+        //adding  swipe to refresh listener
         addSwipeToRefresh();
 
         //checking for internet

@@ -8,7 +8,9 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-
+/**
+ * End point should be define here
+ */
 public interface NetworkApiInterface {
 
     @GET("2iodh4vg0eortkl/facts.json")

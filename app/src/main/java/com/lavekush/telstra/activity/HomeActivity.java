@@ -13,6 +13,9 @@ import com.lavekush.telstra.R;
 import com.lavekush.telstra.fragment.ItemFragment;
 import com.lavekush.telstra.vo.RowItem;
 
+/**
+ * Main class contain the a single for displaying the list item with swipe-to-refresh functionality
+ */
 public class HomeActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener{
 
     @Override
@@ -39,9 +42,9 @@ public class HomeActivity extends AppCompatActivity implements ItemFragment.OnLi
     /**
      * For adding fragment on view
      *
-     * @param containerViewId
-     * @param fragment
-     * @param fragmentTag
+     * @param containerViewId - Resource ID
+     * @param fragment - Fragment need to be added on container
+     * @param fragmentTag - TAG for the fragment (Useful once we poping it)
      */
     protected void addFragment(@IdRes int containerViewId,
                                @NonNull Fragment fragment,
@@ -52,6 +55,7 @@ public class HomeActivity extends AppCompatActivity implements ItemFragment.OnLi
                 .disallowAddToBackStack()
                 .commit();
     }
+
 
     @Override
     public void onListFragmentInteraction(RowItem item) {

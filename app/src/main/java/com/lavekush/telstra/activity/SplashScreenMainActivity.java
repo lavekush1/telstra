@@ -7,6 +7,9 @@ import android.os.Bundle;
 
 import com.lavekush.telstra.R;
 
+/**
+ * Application splash screen, for showoing company logo and name
+ */
 public class SplashScreenMainActivity extends AppCompatActivity {
 
     // Splash screen timeout delay

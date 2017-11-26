@@ -12,9 +12,8 @@ import android.widget.TextView;
 import com.lavekush.telstra.R;
 
 /**
- * Created by e01065 on 11/25/2017.
+ * Container class for all utility method for the app
  */
-
 public class Util {
 
     private static final String TAG = Util.class.getSimpleName();
@@ -39,6 +38,14 @@ public class Util {
         return false;
     }
 
+
+    /**
+     * For showing snackbar messages
+     * @param context - Current app context
+     * @param view - Anchor view
+     * @param message - Message which needs to be displayed
+     * @return - Snackbar for future reference
+     */
     public static Snackbar showSnackBarIndefinite(Context context, View view, String message) {
         Snackbar snackbar = null;
 
