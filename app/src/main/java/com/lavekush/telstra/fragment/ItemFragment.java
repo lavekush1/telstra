@@ -227,6 +227,8 @@ public class ItemFragment extends Fragment {
 
                                 //Notifying the views to update thierself
                                 mRecyclerView.getAdapter().notifyDataSetChanged();
+								mViewFlipper.setDisplayedChild(CONTAINER_DATA);
+
 
                             } else {
                                 // No adapter set yet, setting it
