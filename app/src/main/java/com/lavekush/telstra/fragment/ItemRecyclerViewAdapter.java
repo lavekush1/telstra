@@ -17,7 +17,7 @@ import java.util.List;
 
 public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerViewAdapter.ViewHolder> {
 
-    private final List<RowItem> mValues;
+    private List<RowItem> mValues;
     private final OnListFragmentInteractionListener mListener;
 
     public ItemRecyclerViewAdapter(List<RowItem> items, OnListFragmentInteractionListener listener) {
@@ -70,5 +70,14 @@ public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerVi
             mDesc = view.findViewById(R.id.text_desc);
             mIcon = view.findViewById(R.id.img_icon);
         }
+    }
+
+
+    /**
+     * setting item for notifying the new data
+     * @param items - List
+     */
+    public void setItems(List<RowItem> items) {
+        this.mValues = items;
     }
 }
